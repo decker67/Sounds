@@ -1,5 +1,6 @@
 
 .soundEntry {
+  cursor: pointer;
   position: absolute;
   color: forestgreen;
   font-size: 20%;

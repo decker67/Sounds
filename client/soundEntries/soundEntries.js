@@ -7,9 +7,8 @@ Template.soundEntries.helpers({
 Template.soundEntries.events({
   'click .soundEntry': function () {
     setSong('speed', this.speed);
-    setSong('tones', this.value);
-    setSong('category', this.library);
-    songPosition = 0;
+    setSong('tones', this.tones);
+    setSong('category', this.category);
     restartPlay();
   }
 });

@@ -1,0 +1,43 @@
+
+/* tooltip */
+.tooltip{
+  display: inline;
+}
+
+.tooltip:hover:before{
+  border: solid;
+  border-color: forestgreen transparent;
+  border-width: 6px 6px 0 6px;
+  bottom: 20px;
+  content: "";
+  left: 50%;
+  position: absolute;
+  z-index: 99;
+}
+
+.tooltip:hover:after{
+  background: forestgreen;
+  border-radius: 5px;
+  bottom: 26px;
+  color: #fff;
+  content: attr(tooltip);
+  left: 20%;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 98;
+  width: 220px;
+}
+
+/* hide and seek */
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* other */
+
+
+

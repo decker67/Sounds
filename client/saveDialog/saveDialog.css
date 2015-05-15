@@ -1,0 +1,12 @@
+#saveDialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: white;
+}
+
+.saveButton {
+  width: 40px;
+  margin: 5px auto 5px auto;
+}

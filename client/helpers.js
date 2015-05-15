@@ -2,12 +2,19 @@ categories = {
   'drums': {name: 'Drums', path: 'drums'},
   'voices': {name: 'Voices', path: 'voices'},
   'scifi': {name: 'Sci-Fi', path: 'scifi'},
-  'guitar': {name: 'Guitar', path: 'guitar'}
+  'guitar': {name: 'Guitar', path: 'guitar'},
+  'scratches': {name: 'Scratches', path: 'scratches'},
+  'realScratches': {name: 'Real Scratches', path: 'realScratches'}
 };
 
+var songPosition;
 var intervallHandler;
 
+hideSaveDialog = true;
+hideSaveDialogDependency = new Deps.Dependency;
+
 restartPlay = function () {
+  songPosition = 0;
   if (intervallHandler) {
     Meteor.clearInterval(intervallHandler);
   }

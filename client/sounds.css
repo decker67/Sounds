@@ -45,25 +45,17 @@ body {
   background-color: yellow;
 }
 
-#saveButtonDialog {
-  position: relative;
+/* save */
+#saveDialogContainer {
+  flex: 0 0 40px;
 }
 
 #saveButton {
+  display: none;
+  position: absolute;
   width: 40px;
   margin: 5px auto 5px auto;
 }
 
-.hide {
-  display: none;
-}
+/* other */
 
-.show {
-   display: block;
-}
-
-#saveDialog {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}

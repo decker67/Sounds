@@ -1,7 +1,8 @@
 <template name="soundEntries">
   {{#each sounds}}
-    <span class="soundEntry"
-          style="left:{{x}}px; top:{{y}}px">{{name}}
-    </span>
+    <div class="soundEntry tooltip"
+          style="left:{{x}}px; top:{{y}}px"
+          tooltip="{{tones}} ({{category}})">{{name}}
+    </div>
   {{/each}}
 </template>
