@@ -1,0 +1,69 @@
+@font-face {
+  font-family: CalvinHobbes;
+  src: url("/fonts/CalvinandHobbesNormal.ttf");
+}
+
+* {
+  font-family: CalvinHobbes;
+}
+
+body {
+  background-color: rebeccapurple;
+}
+
+#content {
+  display: -webkit-flex;
+}
+
+#sounds {
+  width: 600px;
+  margin: auto;
+
+  display: -webkit-flex;
+  -webkit-flex-flow: column wrap;
+  font-size: 400%;
+}
+
+#title {
+  width: 450px;
+  padding: 30px;
+  -webkit-transform: rotate(-30deg) translate(-200px, -100px);
+
+  background-color: maroon;
+}
+
+#speed {
+}
+
+#categories {
+  font-size: 50%;
+  background-color: maroon;
+}
+
+#keystrokes {
+  font-size: 100%;
+  background-color: yellow;
+}
+
+#saveButtonDialog {
+  position: relative;
+}
+
+#saveButton {
+  width: 40px;
+  margin: 5px auto 5px auto;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+   display: block;
+}
+
+#saveDialog {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
